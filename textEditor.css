@@ -1,0 +1,191 @@
+/*
+LESS Document
+Author: Jacob Scott
+Created: 11-14-15
+Modified: 12-16-15
+*/
+
+/* Import Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic,700,700italic,800,800italic,300italic,300);
+
+/* Rich Text Editor Styles */
+.wrapper {
+	margin: 0;
+	width: 100%;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  padding-top: 20pt;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+}
+
+.editor-controls {
+	display: block;
+	padding-top: 6px;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #bbbbbb;
+	margin-top: 6px;
+}
+
+.editor-controls .button-group {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+h1 {
+  margin: 0;
+  padding-bottom: 5pt;
+  border-bottom: 1px solid #ddd;
+}
+input[type="text"] {
+  height: 20pt;
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  margin-top: 5pt;
+  padding-bottom: 5pt;
+  border-bottom: 1px solid #ddd;
+}
+
+.editor-richText-box {
+	width: 100%;
+	min-height: 380px;
+	border: 2px solid #cccccc;
+	background-color: #efefef;
+	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	word-break: break-word;
+	word-wrap: normal;
+	padding: 16px;
+}
+
+.editor-text-box {
+	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	word-break: break-word;
+	word-wrap: normal;
+	position: absolute;
+	margin: 6pt;
+	width: calc(100% - 35pt);
+}
+
+.rte.button {
+	display: block;
+	float: left;
+	padding: 6px;
+	margin: 6px;
+	text-align: center;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+.rte.main.button {
+	position: relative;
+	color: white;
+	padding: 6px 12px;
+	margin: 6px;
+	background-color: #2676d5;
+	border: 1px solid #1d5aa3;
+	font-weight: bold;
+	border-radius: 5px;
+	
+	&:hover {
+		background-color: #3a3a3a;
+		border-color: #1a1a1a;
+	}
+
+	&.fileUpload {
+		position: relative; 
+		overflow: hidden; 
+		cursor: pointer;
+		
+		input[type='file'] {
+			cursor: pointer; 
+			position: absolute; 
+			top: 0; 
+			opacity: 0; 
+			display: block; 
+			margin: 0; 
+			padding: 0; 
+			font-size: 20px; 
+			right: 0;
+		}
+	}
+}
+.rte.editor.button {
+	color: #1a1a1a;
+	background-color: #eeeeee;
+	font-weight: bold;
+	margin: 0;
+	height: 34px;
+	
+	&:hover {
+		background-color: #3a3a3a;
+		border-color: #1a1a1a;
+		color: white;
+	}
+	
+	&:first-of-type {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	
+	&:last-of-type {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	
+}
+.rte.editor.dropdown {
+	display: block;
+	float: left;
+	padding: 5px;
+	margin: 6px;
+	height: 34px;
+	text-align: center;
+	color: #1a1a1a;
+	background-color: #eeeeee;
+	font-weight: bold;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	display: inline-block;
+	margin: 0 0px;
+	margin-left: 0;
+	
+	&:hover {
+		cursor: pointer;
+		border-color: #1a1a1a;
+		//color: white;
+	}
+	
+	option {
+		background-color: inherit;
+		font-weight: bold;
+	}
+}
+.rte.editor.dropdown-label {
+	color: #1a1a1a;
+	background-color: #eeeeee;
+	font-weight: bold;
+	margin: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	display: block;
+	float: left;
+	padding: 6px;
+	margin: 0;
+	text-align: center;
+}
+
+.rte.editor.dropdown#fontFamily {
+	width: 150px;
+	font-weight: normal;
+}
+
+/*textarea{
+	margin-top: 5pt;
+	overflow-x: scroll;
+	margin-left: 0.5em;
+}
