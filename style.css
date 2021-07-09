@@ -3,11 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
-    /* overflow: hidden; */
+    overflow: hidden; 
     min-width: 100vw;
     min-height: 100vh;
     /* background: wheat; */
