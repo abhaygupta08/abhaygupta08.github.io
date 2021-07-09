@@ -144,7 +144,7 @@ async function putData(data) {
 }
 
 document.querySelector("#resumeToggle").addEventListener('click', () => {
-    alert("Coming Soon ! 😵")
+    window.location ="./resume.pdf"
 })
 
 window.document.title = "Portfolio | Abhay Gupta";
