@@ -5,11 +5,23 @@
     box-sizing: border-box;
 }
 
+body,
+header,
+footer,
+.animated-area,
+section,
+.box-area,
+main {
+    overflow: hidden !important;
+}
+
+section {
+    position: absolute;
+}
+
 body {
-    overflow: hidden; 
     min-width: 100vw;
     min-height: 100vh;
-    /* background: wheat; */
 }
 
 #slash {
