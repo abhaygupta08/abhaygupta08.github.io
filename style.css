@@ -258,7 +258,7 @@ nav ul:last-child li>a:hover {
         text-align: center;
     }
     .tech-list .tech-wrapper {
-        justify-content: center !important;
+        /*justify-content: center !important;*/
     }
     .tech-list .tech-wrapper .tech-list-content {
         min-width: 110px !important;
