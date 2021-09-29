@@ -28,8 +28,9 @@
             </div>
         </div>
     </div>
-
-
+    
+    <div style="background-image: url('./assets/article_bg.png');background-color: #363636;">
+    
     <div class="header-container">
         <header>
             <nav>
@@ -84,12 +85,11 @@
         </section>
     </div>
 
-
+    <div class="heading-container">
+        <h1>introduction</h1>
+        <h3>about me</h3>
+    </div>
     <article role="about">
-        <div class="heading-container">
-            <h1>introduction</h1>
-            <h3>about me</h3>
-        </div>
         <div class="article-content" style="max-width:60vw;margin:auto;">
             <h2><i style="vertical-align: super;" class="fa-solid fa-quote-left"></i> Hello Techies</h2>
             <p>
@@ -118,11 +118,12 @@
             </div>
         </div>
     </article>
+
+    <div class="heading-container">
+        <h1>tech&nbsp;stack</h1>
+        <h3>my&nbsp;superpowers</h3>
+    </div>
     <article role="skills">
-        <div class="heading-container">
-            <h1>tech&nbsp;stack</h1>
-            <h3>my&nbsp;superpowers</h3>
-        </div>
         <div class="article-content" style="max-width:60vw;margin:auto;">
             <ul>
                 <li class="tech-list">
@@ -178,12 +179,12 @@
             </ul>
         </div>
     </article>
-
-<article role="projects">
+    
     <div class="heading-container">
         <h1>build</h1>
         <h3>projects</h3>
     </div>
+    <article role="projects">
     <div class="article-projects">
             <div class="left">
                 <h1>Linkedin Toolkit</h1>
@@ -209,11 +210,11 @@
 </article>
     
 
+<div class="heading-container">
+    <h1>contact</h1>
+    <h3>lets talk</h3>
+</div>
     <article role="contact">
-        <div class="heading-container">
-            <h1>contact</h1>
-            <h3>lets talk</h3>
-        </div>
 <p align="center">I'm most active on Twitter,
 but feel free to shoot me an email as well !</p>
 <div class="form-part">
@@ -228,7 +229,7 @@ but feel free to shoot me an email as well !</p>
 </div>
 </article>
 
-
+</div>
     <footer>
         <div>
             Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-code"></i> by <a target="_blank" href="https://www.github.com/abhaygupta08">Abhay</a>
@@ -254,7 +255,7 @@ but feel free to shoot me an email as well !</p>
         window.onload = () => {
             setTimeout(() => {
                 document.querySelector('.loadingContainer').style.display = 'none';
-            }, 3 * 1000);
+            }, 3 * 000);
             var currS = window.pageYOffset;
             window.onscroll = () => {
                 if (currS > document.querySelector('.header-container').scrollHeight + document.querySelectorAll('article')[0].scrollHeight + document.querySelectorAll('article')[1].scrollHeight + document.querySelectorAll('article')[2].scrollHeight) {
