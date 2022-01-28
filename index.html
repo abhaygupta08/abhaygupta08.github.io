@@ -1,297 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Abhay Gupta</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
-</head>
-
-<body>
-
-    <div class="loadingContainer">
-        <div class='container'>
-
-            <div class="spinner-simple">
-                <span>Loading</span>
-                <div>
-                    <div>
-                        <div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="boiler.css">
+    <link rel="stylesheet" href="animations.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img id="abhay-logo" src='./assets/abhay2.svg' alt='AAAA'  width="70px" height="70px"/>
         </div>
-    </div>
-    
-    <div style="background-image: url('./assets/article_bg.png');background-color: #363636;">
-    
-    <div class="header-container">
-        <header>
-            <nav>
-                <ul>
-                    <li>OYETROUBLEMAKER.</li>
-                </ul>
-                <ul>
-                    <li id="toggle-nav"><i class="fa-solid fa-ellipsis"></i></li>
-                </ul>
 
-                <ul>
-                    <li><a class="active" href="http://">Home</a></li>
-                    <li><a href="http://">Blogs</a></li>
-                    <li><a href="http://">Contact</a></li>
-                    <li><a href="./resume.pdf" style="border:1px solid var(--orange);padding:4px;border-radius: 3px;">Resume</a></li>
-                    <!-- <li><a href="http://">News</a></li> -->
-                    <li id="mobile-icons">
-                        <br>
-                        <br>
-                        <div class="socials">
-                        <a href="http://"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="http://"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="http://"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </li>
-                   
-                </ul>
-                
-            </nav>
-        </header>
-        <section class="banner">
-            <div class="left">
-                <span align="left"><i class="fa-solid fa-laptop-code"></i> Hey, I'm</span>
-                <span>Abhay Gupta</span>
-                <span>Full-Stack Web Developer / Python enthusiast / Automation Geek</span>
-                <div>
-                    Lorem ipsum dolor sit fffwefwefewfe ew wegwegwegw fwe fweLorem ipsum dolor sit fffwefwefewfe ew
-                    wegwegwegw fwe fwe
-
-                </div>
-                <div class="btn-container">
-                    <button class="learn-more">
-                        <div class="circle" aria-hidden="true">
-                            <div class="icon arrow"></div>
-                        </div>
-                        <div class="button-text">Lets Talk !</div>
-                    </button>
-                </div>
-
-            </div>
-            <div class="right"> </div>
-        </section>
-    </div>
-
-    <div class="heading-container">
-        <h1>introduction</h1>
-        <h3>about me</h3>
-    </div>
-    <article role="about">
-        <div class="article-content" style="max-width:60vw;margin:auto;">
-            <h2><i style="vertical-align: super;" class="fa-solid fa-quote-left"></i> Hello Techies</h2>
-            <p>
-            I'm a pre-final year student currently pursuing a bachelor's degree in Computer Science and Engineering. I enjoy
-            solving problems, building products and tools, mentoring, and automating workflows.
-            </p>
-            <br>
-            <p>
-                I'm also passionate about communities and open-source, and also tinkering and messing around with softwares, web-automation and making tools onto them, or scrapping them for parts to use in other projects.
-            </p>
-            <br>
-            I'm a problem-solver at heart, highly teachable and eager to learn new skills, fun to work with, have a killer work
-            ethic, and above all, extremely curious and ask a lot of questions.
-            </p>
-            <br>
-            <div style="max-width:60vw;margin:auto; display:flex;justify-content: space-between;flex-wrap:wrap;">
-                <div style="margin: auto;text-align: center;margin-top: 10px;"><span style="color:#F7717D;">College Name</span><br>Kamla Nehru Institute of Technology</div>
-                <div style="margin: auto;text-align: center;margin-top: 10px;"><span style="color:#F7717D;">Branch</span><br>Computer Science and Engineering</div>    
-                <!--<div style="margin: auto;text-align: center;margin-top: 10px;"><span style="color:#F7717D;">Year</span><br>Third</div>-->
-            </div>
-
-            <div class="socials">
-                <a href="http://"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="http://"><i class="fa-brands fa-twitter"></i></a>
-                <a href="http://"><i class="fa-brands fa-github"></i></a>
-            </div>
+        
+        <ul class="block_reveal_below_to_top">
+          <li title="implenting soon 🙈">About</li>
+          <li title="implenting soon 🙈">Contact</li>
+          <li>
+            <a href="./config/resume.pdf">
+              <img src='./assets/vertical_align_bottom_white_24dp.svg' width="24px" height="24px" style="margin-top: -0.5rem;" alt=''/></li>
+            </a>
+        </ul>
+      </nav>
+      <article class="hero">
+        <div class="header-circle circle_reveal"></div>
+        <div class="header-scroll-to-bottom block_reveal_below_to_top">
+          <div class="text">
+            <div class="tt">scroll down</div>
+            <div class="scroll-line-arrow"></div>
+          </div>
         </div>
+        <div class="left">
+          <h1>
+            <span class="block_reveal_left_to_right_with_color" style="white-space:nowrap;">
+              frontend developer
+            </span>
+            <br />
+            <span class="block_reveal_left_to_right_with_color">
+              & student.
+            </span>
+          </h1>
+
+          <p class="block_reveal_below_to_top">
+            Hi I'm Abhay Gupta, passionate about Front-end development & creating Innovative Products with Beautiful and Engaging Design.
+          </p>
+          <div class="button-wrapper left_to_its_position">
+            <div class="btn-circle"></div>
+            <button>
+              <span> See my work </span>
+              <div class="line-arrow"></div>
+            </button>
+          </div>
+          <div class="hero-links block_reveal_left_to_right">
+            <div>
+              <a  class='link' href='https://www.linkedin.com/in/abhaygupta08/' target="__blank">
+                Linkedin
+              </a>
+            </div>
+            <div>/</div>
+            <div>
+              <a  class='link' href='https://github.com/abhaygupta08' target="__blank">
+              Github
+              </a>
+            </div>
+            <div>/</div>
+            <div>
+              <a  class='link' href='https://twitter.com/abhay_gupta08'>
+              Twitter
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="right right_to_its_position">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            style="
+              z-index: -1;
+              position: absolute;
+              width: 100vh;
+              height: 100vh;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+            class="cross"
+          >
+            <path
+              fill="#121212"
+              d="M37.8,-69.8C47.3,-60,52.1,-46.4,56.4,-34.1C60.7,-21.9,64.6,-10.9,69.4,2.8C74.2,16.5,79.9,33,75.2,44.5C70.4,56,55.2,62.6,40.9,66.5C26.6,70.3,13.3,71.6,0.4,70.8C-12.4,70,-24.8,67.3,-37.4,62.4C-50,57.6,-62.8,50.6,-71.8,39.8C-80.8,29.1,-86.1,14.5,-81.8,2.5C-77.6,-9.6,-63.8,-19.2,-54.5,-29.6C-45.3,-39.9,-40.6,-51,-32.2,-61.5C-23.9,-72,-12,-81.8,1.1,-83.7C14.2,-85.6,28.3,-79.6,37.8,-69.8Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <div class="img-right"></div>
+        </div>
+      </article>
+    </header>
+
+    <article id="work">
+      <div class="article-intro">
+        <h2>Crafted with love.</h2>
+        <p>These are a collection of my recent works.</p>
+      </div>
+      <div class="work-items">
+        <div class="work-item">
+          <div
+            class="work-img"
+            style="
+              background-image: url(https://raw.githubusercontent.com/abhaygupta08/spacestagram/main/ss.png);
+            "
+          ></div>
+          <div class="left">
+            <div class="one">
+              <h2>01</h2>
+              <h2>spacestagram</h2>
+            </div>
+            <div class="two">
+              <div>react</div>
+              <div>/</div>
+              <div>css</div>
+              <div>/</div>
+              <div>api</div>
+            </div>
+          </div>
+
+          <div class="right">
+            <a href="https://spacestagram-abhay.netlify.app/"> &ltlive /&gt </a>
+            <a href="https://github.com/abhaygupta08/spacestagram"> &ltgithub /&gt </a>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div
+            class="work-img"
+            style="background-image: url(https://github.com/abhaygupta08/CP-Buddy/raw/main/cp-buddy.png)"
+          ></div>
+          <div class="left">
+            <div class="one">
+              <h2>02</h2>
+              <h2>cp-buddy</h2>
+            </div>
+            <div class="two">
+              <div>react</div>
+              <div>/</div>
+              <div>css</div>
+              <div>/</div>
+              <div>api</div>
+            </div>
+          </div>
+
+          <div class="right">
+            <a href="https://cp-buddy.netlify.app/"> &ltlive /&gt </a>
+            <a href="https://github.com/abhaygupta08/CP-Buddy"> &ltgithub /&gt </a>
+          </div>
+
+        </div>
+
+        <div class="work-item">
+          <div
+            class="work-img"
+            style="background-image: url(https://github.com/abhaygupta08/LinkedIn-Tookit/raw/main/config/Linkedin-Toolkit.png)"
+          ></div>
+          <div class="left">
+            <div class="one">
+              <h2>03</h2>
+              <h2>linkedin-toolkit</h2>
+            </div>
+            <div class="two">
+              <div>html 5</div>
+              <div>/</div>
+              <div>css</div>
+              <div>/</div>
+              <div>chrome web apis</div>
+            </div>
+          </div>
+
+          <div class="right">
+            <!-- <a href=""> &ltlive /&gt </a> -->
+            <a href="https://github.com/abhaygupta08/LinkedIn-Tookit"> &ltgithub /&gt </a>
+          </div>
+
+        </div>
+
+        <div class="work-item">
+          <div
+            class="work-img"
+            style="background-image: url(https://github.com/abhaygupta08/Scribd-Unblur/raw/master/config/dashboard.png)"
+          ></div>
+          <div class="left">
+            <div class="one">
+              <h2>04</h2>
+              <h2>scribd-unblur</h2>
+            </div>
+            <div class="two">
+              <div>html 5</div>
+              <div>/</div>
+              <div>css</div>
+              <div>/</div>
+              <div>chrome web apis</div>
+            </div>
+          </div>
+
+          <div class="right">
+            <!-- <a href=""> &ltlive /&gt </a> -->
+            <a href="https://github.com/abhaygupta08/Scribd-Unblur"> &ltgithub /&gt </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="there-is-more">
+        <p>there's more</p>
+        <a href="https://github.com/abhaygupta08?tab=repositories" target="__blank" class="a-href"
+          ><h2>view all projects</h2>
+          <div class="line-arrow-there-is-more"></div>
+        </a>
+      </div>
     </article>
 
-    <div class="heading-container">
-        <h1>tech&nbsp;stack</h1>
-        <h3>my&nbsp;superpowers</h3>
-    </div>
-    <article role="skills">
-        <div class="article-content" style="max-width:60vw;margin:auto;">
-            <ul>
-                <li class="tech-list">
-                    <h3>Languages</h3>
-                    <div class="tech-wrapper">
-                        <div class="tech-list-content"><i class="fa-brands fa-python"></i> Python</div>
-                        <div class="tech-list-content"><i class="fa-brands fa-js"></i> JavaScript</div>
-                        <div class="tech-list-content"><i class="fa-solid fa-c"></i> C</div>
-                        <div class="tech-list-content">CPP</div>
-                        <div class="tech-list-content"><i class="fa-brands fa-html5"></i> HTML5</div>
-                        <div class="tech-list-content"><i class="fa-brands fa-css3"></i> CSS3</div>
-                        <div class="tech-list-content">styled-components</styled-components>
-                        </div>
-                    </div>
-                </li>
-                <li class="tech-list">
-                    <h3>Database</h3>
-                    <div class="tech-wrapper">
-                        <div class="tech-list-content">Redis</div>
-                        <div class="tech-list-content">Postgres</div>        
-                    </div>
-                </li>
-                <li class="tech-list">
-                    <h3>Frameworks</h3>
-                    <div class="tech-wrapper">
-                        <div class="tech-list-content"><i class="fa-brands fa-react"></i> React.js</div>
-                        <div class="tech-list-content"><i class="fa-brands fa-node-js"></i> Node.js</div>
-                        <div class="tech-list-content">TypeScript</div>
-                        <div class="tech-list-content">Redux</div>
-                        <div class="tech-list-content"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
-                        <div class="tech-list-content">Flask</div>
-                        <div class="tech-list-content">Tkinter</div>
-                    </div>
-                </li>
-                <li class="tech-list">
-                    <h3>Tools and Misc</h3>
-                    <div class="tech-wrapper">
-                                        <div class="tech-list-content"><i class="fa-brands fa-aws"></i> AWS</div>
-                                        <div class="tech-list-content"><i class="fa-brands fa-github-alt"></i> Git</div>
-                                        <div class="tech-list-content"><i class="fa-brands fa-figma"></i> Figma</div>
-                                        <div class="tech-list-content">Adobe Photoshop</div>
-                                    </div>
-                                </li>
-
-                                <li class="tech-list">
-                                    <h3>Project Management</h3>
-                                    <div class="tech-wrapper">
-                                        <div class="tech-list-content"><i class="fa-solid fa-headset"></i> Scrum</div>
-                                        <div class="tech-list-content">Notion</div>
-                                    </div>
-                                </li>
-
-            </ul>
-        </div>
-    </article>
-    
-    <div class="heading-container">
-        <h1>build</h1>
-        <h3>projects</h3>
-    </div>
-    <article role="projects">
-    <div class="article-projects">
-            <div class="left">
-                <h1>Linkedin Toolkit</h1>
-                <ul style="margin-left:60px;list-style-type:none;">
-                    <li>- A Chrome Extension that can used to send connection requests in bulk, withdraw all pending requests sent by you
-                    and also to accept all pending connection requests.</li>
-            
-            <li>- Too handy and user-friendly UI</li>
-            </ul>
-                <div class="socials">
-                    <a href="http://"><i class="fa-solid fa-link"></i></a>
-                    <a href="http://"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-             <div class="right">
-                 <div class="right-background"></div>
-                 <div class="right-content">
-
-            </div>
-       </div>
-    </div>
-
-</article>
-    
-
-<div class="heading-container">
-    <h1>contact</h1>
-    <h3>lets talk</h3>
-</div>
-    <article role="contact">
-<p align="center">I'm most active on Twitter,
-but feel free to shoot me an email as well !</p>
-<div class="form-part">
-    <div class="left"></div>
-    <form class="contact-form" action="">
-        <label>Name :<br><input type="text" required name="" id="" placeholder="Your Name" /></label>
-        <label>Email :<br><input type="email" name="" required id="" placeholder="Email" /></label>
-        <label>Message :<br><textarea type="text" name="" id="" placeholder="Message"> </textarea></label>
-        <button type="submit"><span>Send</span><span><i class="fa-solid fa-arrow-right"></i></span></button>
-    </form>
-
-</div>
-</article>
-
-</div>
     <footer>
-        <div>
-            Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-code"></i> by <a target="_blank" href="https://www.github.com/abhaygupta08">Abhay</a>
+      <div class="circle-border"></div>
+      <div class="upar-wala">
+        <svg id="wwm-decor" viewBox="0 0 344.53 357.34">
+          <defs>
+            <style>
+              .circ1,
+              .circ3 {
+                fill: none;
+              }
+              .circ2 {
+                clip-path: url(#clip-path);
+              }
+              .circ3 {
+                stroke: #fff;
+                stroke-miterlimit: 10;
+              }
+            </style>
+            <clipPath id="clip-path" transform="translate(78.48 75.46)">
+              <circle class="circ1" cx="97" cy="100" r="98"></circle>
+            </clipPath>
+          </defs>
+          <g class="circ2">
+            <line
+              class="circ3"
+              x1="194.76"
+              y1="0.34"
+              x2="0.36"
+              y2="207.59"
+            ></line>
+            <line
+              class="circ3"
+              x1="199.58"
+              y1="5.16"
+              x2="5.18"
+              y2="212.41"
+            ></line>
+            <line class="circ3" x1="204.4" y1="9.98" x2="10" y2="217.23"></line>
+            <line
+              class="circ3"
+              x1="209.22"
+              y1="14.8"
+              x2="14.82"
+              y2="222.05"
+            ></line>
+            <line
+              class="circ3"
+              x1="214.04"
+              y1="19.62"
+              x2="19.64"
+              y2="226.87"
+            ></line>
+            <line
+              class="circ3"
+              x1="218.86"
+              y1="24.44"
+              x2="24.46"
+              y2="231.69"
+            ></line>
+            <line
+              class="circ3"
+              x1="223.68"
+              y1="29.26"
+              x2="29.28"
+              y2="236.51"
+            ></line>
+            <line
+              class="circ3"
+              x1="228.5"
+              y1="34.08"
+              x2="34.1"
+              y2="241.33"
+            ></line>
+            <line
+              class="circ3"
+              x1="233.32"
+              y1="38.9"
+              x2="38.92"
+              y2="246.15"
+            ></line>
+            <line
+              class="circ3"
+              x1="238.14"
+              y1="43.72"
+              x2="43.74"
+              y2="250.97"
+            ></line>
+            <line
+              class="circ3"
+              x1="242.95"
+              y1="48.54"
+              x2="48.56"
+              y2="255.78"
+            ></line>
+            <line
+              class="circ3"
+              x1="247.77"
+              y1="53.36"
+              x2="53.38"
+              y2="260.6"
+            ></line>
+            <line
+              class="circ3"
+              x1="252.59"
+              y1="58.18"
+              x2="58.2"
+              y2="265.42"
+            ></line>
+            <line
+              class="circ3"
+              x1="257.41"
+              y1="63"
+              x2="63.02"
+              y2="270.24"
+            ></line>
+            <line
+              class="circ3"
+              x1="262.23"
+              y1="67.82"
+              x2="67.84"
+              y2="275.06"
+            ></line>
+            <line
+              class="circ3"
+              x1="267.05"
+              y1="72.64"
+              x2="72.66"
+              y2="279.88"
+            ></line>
+            <line
+              class="circ3"
+              x1="271.87"
+              y1="77.46"
+              x2="77.48"
+              y2="284.7"
+            ></line>
+            <line
+              class="circ3"
+              x1="276.69"
+              y1="82.28"
+              x2="82.3"
+              y2="289.52"
+            ></line>
+            <line
+              class="circ3"
+              x1="281.51"
+              y1="87.1"
+              x2="87.12"
+              y2="294.34"
+            ></line>
+            <line
+              class="circ3"
+              x1="286.33"
+              y1="91.92"
+              x2="91.94"
+              y2="299.16"
+            ></line>
+            <line
+              class="circ3"
+              x1="291.15"
+              y1="96.74"
+              x2="96.76"
+              y2="303.98"
+            ></line>
+            <line
+              class="circ3"
+              x1="295.97"
+              y1="101.56"
+              x2="101.58"
+              y2="308.8"
+            ></line>
+            <line
+              class="circ3"
+              x1="300.79"
+              y1="106.37"
+              x2="106.4"
+              y2="313.62"
+            ></line>
+            <line
+              class="circ3"
+              x1="305.61"
+              y1="111.19"
+              x2="111.22"
+              y2="318.44"
+            ></line>
+            <line
+              class="circ3"
+              x1="310.43"
+              y1="116.01"
+              x2="116.04"
+              y2="323.26"
+            ></line>
+            <line
+              class="circ3"
+              x1="315.25"
+              y1="120.83"
+              x2="120.86"
+              y2="328.08"
+            ></line>
+            <line
+              class="circ3"
+              x1="320.07"
+              y1="125.65"
+              x2="125.68"
+              y2="332.9"
+            ></line>
+            <line
+              class="circ3"
+              x1="324.89"
+              y1="130.47"
+              x2="130.5"
+              y2="337.72"
+            ></line>
+            <line
+              class="circ3"
+              x1="329.71"
+              y1="135.29"
+              x2="135.32"
+              y2="342.54"
+            ></line>
+            <line
+              class="circ3"
+              x1="334.53"
+              y1="140.11"
+              x2="140.14"
+              y2="347.36"
+            ></line>
+            <line
+              class="circ3"
+              x1="339.35"
+              y1="144.93"
+              x2="144.95"
+              y2="352.18"
+            ></line>
+            <line
+              class="circ3"
+              x1="344.17"
+              y1="149.75"
+              x2="149.77"
+              y2="357"
+            ></line>
+          </g>
+        </svg>
+
+        <h1>Let's talk.</h1>
+        <p>Feel free to reach out through e-mails or slide in to my DMs.</p>
+        <div class="button-wrapper">
+          <div class="btn-circle"></div>
+          <button>
+            <span> say hello </span>
+            <div class="line-arrow"></div>
+          </button>
         </div>
-        <div>
-            <a href="">Fork <i class="fa-solid fa-code-fork"></i></a> this website
+      </div>
+
+      <div class="footer-links">
+        <div>© 2022 &nbsp; - &nbsp;Abhay Gupta &nbsp; - </div>
+        <div class='flex-gap-1'>
+          <a href='https://www.instagram.com/abhay.0808/' target="__blank"><img src="./assets/instagram.svg" alt=''/></a>
+          <a href='https://www.linkedin.com/in/abhaygupta08/' target="__blank"><img src="./assets/linkedin.svg" alt=''/></a>
+          <a href='https://www.github.com/abhaygupta08/' target="__blank"><img src="./assets/github.svg" alt=''/></a>
+          <a href='https://twitter.com/abhay_gupta08/' target="__blank"><img src="./assets/twitter.svg" alt=''/></a>
         </div>
+      </div>
     </footer>
     <script>
-        const nav = document.querySelector('.header-container');
-        const toggleNav = document.querySelector('#toggle-nav');
-        // console.log(toggleNav);
-        toggleNav.addEventListener('click', e => {
-            if (nav.classList == "header-container") {
-                nav.classList = "header-container toggle";
-                toggleNav.innerHTML = '<i class="fa-solid fa-angles-up"></i>';
-            }
-            else {
-                nav.classList = "header-container";
-                toggleNav.innerHTML = '<i class="fa-solid fa-ellipsis"></i>';
-            }
-        })
-        window.onload = () => {
-            setTimeout(() => {
-                document.querySelector('.loadingContainer').style.display = 'none';
-            }, 3 * 1000);
-            var currS = window.pageYOffset;
-            window.onscroll = () => {
-                if (currS > document.querySelector('.header-container').scrollHeight + document.querySelectorAll('article')[0].scrollHeight + document.querySelectorAll('article')[1].scrollHeight + document.querySelectorAll('article')[2].scrollHeight) {
-                    document.title = 'Contact | Abhay Gupta';
-                }
-                else if (currS > document.querySelector('.header-container').scrollHeight + document.querySelectorAll('article')[0].scrollHeight + document.querySelectorAll('article')[1].scrollHeight) {
-                    document.title = 'Projects | Abhay Gupta';
-                }
-                else if (currS > document.querySelector('.header-container').scrollHeight+document.querySelectorAll('article')[0].scrollHeight) {
-                    document.title = 'Skills | Abhay Gupta';
-                }
-                else if (currS > document.querySelector('.header-container').scrollHeight) {
-                    document.title = 'About | Abhay Gupta';
-                }
-                else{
-                    document = 'Home | Abhay Gupta';
-
-                }
-
-
-                if (document.querySelector('.loadingContainer').style.display != 'none') return;
-                else if (nav.classList.contains('toggle') || window.pageYOffset - currS < 1 && window.pageYOffset > 60) {
-                    document.querySelector('.banner').style.top = '50px';
-                    document.querySelector('nav').classList.add('scroll');
-                    
-                }
-                else {
-                    document.querySelector('.banner').style.top = '0px';
-                    document.querySelector('nav').classList.remove('scroll');
-                }
-                currS = window.pageYOffset;
-            }
+      window.onload = () => {
+        document.querySelector('body').style.height ='auto';
+        document.querySelector('body').style.overflow ='auto';
+      }
+      window.onscroll = () => {
+        if (
+          window.scrollY >
+          document.querySelector(".hero").getBoundingClientRect().top
+        ) {
+          document
+            .querySelector(".header-scroll-to-bottom")
+            .classList.add("remove");
+          document
+            .querySelector(".header-scroll-to-top")
+            .classList.remove("remove");
+        } else {
+          document
+            .querySelector(".header-scroll-to-bottom")
+            .classList.remove("remove");
+          document
+            .querySelector(".header-scroll-to-top")
+            .classList.add("remove");
         }
+      };
     </script>
-
-
-</body>
-
+  </body>
 </html>

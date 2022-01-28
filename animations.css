@@ -1,0 +1,141 @@
+@keyframes logoAnimation {
+    100% {
+      opacity: 1;
+      position: relative;
+    }
+    80% {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(1);
+      opacity: 0;
+    }
+  
+    0% {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(2);
+      opacity: 1;
+    }
+  }
+  
+
+  @keyframes breathe {
+    0% {
+      transform: translateY(-5%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(5%);
+    }
+  }
+  
+
+  
+@keyframes breatheScroll {
+    0% {
+      bottom: 17vh;
+    }
+    50% {
+      bottom: 20vh;
+    }
+    100% {
+      bottom: 23vh;
+    }
+  }
+
+  @keyframes leftToRight {
+    0% {
+      clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    }
+    100% {
+      clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+    }
+  }
+  
+  
+/* animations */
+
+.block_reveal_left_to_right {
+    animation: leftToRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      alternate-reverse;
+  }
+  
+  .block_reveal_left_to_right_with_color {
+    animation: leftToRightColor 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      forwards alternate-reverse;
+  }
+  
+  @keyframes leftToRightColor {
+    0% {
+      clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    }
+    100% {
+      clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+      background-color: #212121;
+      color: #212121;
+    }
+  }
+  
+  .block_reveal_below_to_top {
+    animation: belowToTop 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      alternate-reverse;
+  }
+  
+  @keyframes belowToTop {
+    0% {
+      clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    }
+    100% {
+      clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+    }
+  }
+  
+  .right_to_its_position {
+    animation: moveRightToLeft 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      alternate-reverse;
+  }
+  
+  @keyframes moveRightToLeft {
+    0% {
+      left: 0%;
+      opacity: 1;
+    }
+    100% {
+      left: 30%;
+      opacity: 0;
+    }
+  }
+  .left_to_its_position {
+    animation: moveLeftToRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      alternate-reverse;
+  }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      left: 0%;
+      opacity: 1;
+    }
+    100% {
+      left: -30%;
+      opacity: 0;
+    }
+  }
+  
+  .circle_reveal {
+    animation: circleReveal 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      alternate-reverse;
+  }
+  
+  @keyframes circleReveal {
+    0% {
+      clip-path: circle(50% at 50% 50%);
+    }
+    100% {
+      clip-path: circle(0.4% at 50% 50%);
+    }
+  }
+  
