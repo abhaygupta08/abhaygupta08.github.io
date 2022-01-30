@@ -4,7 +4,6 @@
 header {
   overflow: hidden;
   padding: 10px;
-  border-bottom: 1px solid white;
 }
 nav {
   padding: 0 3rem;
@@ -13,7 +12,8 @@ nav {
   align-items: center;
 }
 nav ul {
-  margin-top: 40px;
+  margin: 0;
+  /* margin-top: 40px; */
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -27,9 +27,10 @@ nav ul {
   cursor: pointer;
   color: rgb(108, 108, 108);
   text-decoration: none;
+}
+.border-bottom{
   border-bottom: 1px solid rgb(108, 108, 108);
 }
-
 .link::after {
   content: "";
   position: absolute;
@@ -281,12 +282,15 @@ nav ul {
   height: 25rem;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgba(108, 108, 108, 0.5);
+  border-bottom: 1px solid rgba(108, 108, 108, 0.1);
 }
 .work-item .left,
 .work-item .right {
   width: 50%;
   padding: 5rem 0rem;
+}
+.work-items .work-item:last-child{
+  border-bottom: none;
 }
 .work-items .one::before {
   width: 10rem;
@@ -329,7 +333,7 @@ nav ul {
   font-family: VisueltPro-Bold, sans-serif;
 }
 
-.work-items .left .two {
+.work-items .left .two,.work-item .left .three {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,6 +346,12 @@ nav ul {
   transition-delay: 50ms;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.work-item .left .three{
+  text-transform: none;
+  padding: 4rem 2rem;
+  font-size: 0.8rem;
+  line-height: 2rem;
 }
 .work-item .right {
   padding-right: 5rem;
@@ -549,6 +559,14 @@ footer {
 /* mobile view */
 
 @media screen and (max-width: 786px) {
+  nav{
+    padding: 0 2rem;
+  }
+  nav ul{
+    gap:1rem;
+    padding: 0;
+    margin-left: 0.5rem;
+  }
   .hero {
     flex-direction: column;
     padding: 5rem 2rem;

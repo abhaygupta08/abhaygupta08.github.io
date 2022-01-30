@@ -1,0 +1,196 @@
+.about{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.hero{
+    height: 0;
+    padding:0;
+}
+.about .left{
+    width: 50vw;
+}
+.about > div{
+    max-width: 40%;
+    width: 22rem;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.about .left h1{
+    font-family: VisueltPro-Bold;
+    font-size: 3rem;
+    color: #212121;
+}
+.about .left p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 200;
+}
+
+.about .right{
+    background-image: url('/config/pp-removebg-preview.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50vw;
+}
+
+.experience{
+    background-color: white;
+    overflow: hidden;
+}
+.exp-list{
+    padding: 3rem 10rem;
+}
+.exp ul{
+    padding: 1rem 0;
+    list-style-type:circle;
+    display: flex;
+    flex-direction: column;
+    gap:0.7rem;
+}
+.exp .exp-head{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+.exp .company{
+    color:#212121;
+}
+.exp .position{
+    color:rgb(108, 108, 108);
+    font-size: 1rem;
+    font-family: VisueltPro-Regular;
+}
+.header-skills{
+    display: flex;
+    gap: 5rem;
+    padding: 3rem 5rem;
+    overflow: hidden;
+}
+.header-skills .hr{
+    width: 10rem;
+    background-color: #212121;
+    display: inline;
+    margin: 0;
+    height: 2px;
+    margin-top:1rem;
+}
+.header-skills .numb{
+    line-height: 2rem;
+    vertical-align: middle;
+}
+.header-skills h3{
+    font-family: VisueltPro-Bold;
+    font-size: 2rem;
+    color: #212121;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+    padding: 0 3rem;
+    justify-content: center;
+    text-align: center;
+}
+.skillOf{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.skills-list{
+    display: flex;
+    gap:2rem;
+}
+.skills{
+    padding: 5rem 0;
+    overflow: hidden;
+}
+.skills p{
+    padding: 0 10rem;
+    padding-bottom: 3rem;
+}
+
+.quote{
+    padding:2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    width: 100%;
+    overflow: hidden;
+}
+.quote h1{ 
+    text-align: center;
+    font-size: 3rem;
+    font-family: VisueltPro-Bold;
+    color: #212121;
+}
+.quote p{
+    text-align: right;
+    margin-right: 5rem;
+}
+@media screen and (max-width:786px) {
+    .about{
+        flex-direction: column-reverse;
+        gap:1rem;
+    }
+    .about > div{
+        max-width: 90%;
+        margin:0rem auto;
+        gap: 1rem;
+    padding: 4rem 0;
+    }
+    .about .left{
+        width:90vw;
+    }
+    .about .right{
+        height: 50vh;
+        width: 100vw;
+    }
+    .about .left{
+        padding-top: 0;
+    }
+    .header-skills{
+        gap: 1rem;
+        padding: 3rem 2rem;
+    }
+    .header-skills .hr{
+        width: 3rem;
+    }
+    .header-skills h3{
+        white-space: nowrap;
+    }
+    .exp-head .company{
+        font-size: 1.6rem;
+        white-space: nowrap;
+    }
+    .exp .exp-head{
+        gap: 1rem;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .exp-list{
+        padding: 2rem 2rem;
+        line-height: 2rem;
+        padding-top: 0;
+    }    
+    .skills-container,.skills p{
+        padding: 2rem 2rem;
+    }
+.skills-list{
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.quote{
+    padding:2rem 2rem;
+}
+.quote h1{
+    font-size: 1.5rem;
+}
+}
