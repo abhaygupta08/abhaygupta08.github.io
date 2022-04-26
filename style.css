@@ -28,7 +28,7 @@ nav ul {
   color: rgb(108, 108, 108);
   text-decoration: none;
 }
-.border-bottom{
+.border-bottom {
   border-bottom: 1px solid rgb(108, 108, 108);
 }
 .link::after {
@@ -289,7 +289,7 @@ nav ul {
   width: 50%;
   padding: 5rem 0rem;
 }
-.work-items .work-item:last-child{
+.work-items .work-item:last-child {
   border-bottom: none;
 }
 .work-items .one::before {
@@ -333,7 +333,8 @@ nav ul {
   font-family: VisueltPro-Bold, sans-serif;
 }
 
-.work-items .left .two,.work-item .left .three {
+.work-items .left .two,
+.work-item .left .three {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,7 +348,7 @@ nav ul {
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.work-item .left .three{
+.work-item .left .three {
   text-transform: none;
   padding: 4rem 2rem;
   font-size: 0.8rem;
@@ -370,12 +371,12 @@ nav ul {
   color: rgba(108, 108, 108, 0.5);
   font-family: VisueltPro-Bold, sans-serif;
   font-size: 1.5rem;
-  transition-property: color,transform;
+  transition-property: color, transform;
   transition-delay: 50ms;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.work-item .right a:hover{
+.work-item .right a:hover {
   color: black;
   transform: scale(1.1);
 }
@@ -550,7 +551,7 @@ footer {
   left: -20%;
 }
 
-.flex-gap-1{
+.flex-gap-1 {
   display: flex;
   width: 100;
   gap: 1rem;
@@ -559,11 +560,11 @@ footer {
 /* mobile view */
 
 @media screen and (max-width: 786px) {
-  nav{
+  nav {
     padding: 0 2rem;
   }
-  nav ul{
-    gap:1rem;
+  nav ul {
+    gap: 1rem;
     padding: 0;
     margin-left: 0.5rem;
   }
