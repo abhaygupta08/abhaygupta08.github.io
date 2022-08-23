@@ -23,7 +23,6 @@ const assets = [
     "/assets/mail.svg",
     "/assets/favicon.png",
     "/assets/favicon.ico",
-    "/assets/cp-buddy.png",
     "/assets/ceasar-bust.c2bf68cb3b24b5361c95d04c445511a8.png",
     "/assets/abhay.svg",
     "/assets/abhay2.svg",
@@ -45,7 +44,7 @@ self.addEventListener("install", installEvent => {
 self.addEventListener("fetch", fetchEvent => {
     fetchEvent.respondWith(
         caches.match(fetchEvent.request).then(res => {
-            if(res) return res;
+            if(res && !navigator.onLine) return res;
             else{
                 return fetch(fetchEvent.request)
                 .then(res => {

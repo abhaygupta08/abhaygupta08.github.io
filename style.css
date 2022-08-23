@@ -20,7 +20,10 @@ nav ul {
   align-items: center;
   gap: 2rem;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .link {
   display: inline-block;
   position: relative;
